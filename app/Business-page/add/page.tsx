@@ -26,7 +26,7 @@ export default function AddBusinessPage() {
         setContactNumber("");
         setAddress("");
         alert("Login successful!");
-        router.push("/components/sidebar"); // Redirect to dashboard after login
+        router.push("/components"); // Redirect to dashboard after login
       } else {
         setMessage("Error: " + data.error);
       }

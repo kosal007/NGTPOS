@@ -23,7 +23,7 @@ export default function LoginPage() {
 
       if (data.success) {
         alert("Login successful!");
-        router.push("/Business-page/add"); // Redirect to dashboard after login
+        router.push("/Admin"); // Redirect to dashboard after login
       } else {
         setError(data.error || "Invalid credentials");
       }
@@ -74,7 +74,7 @@ export default function LoginPage() {
     <div className="mt-6 text-center">
       <p className="text-sm text-black">
         Don't have an account?{" "}
-        <a href="/signup" className="text-blue-600 hover:underline">
+        <a href="/Register-page" className="text-blue-600 hover:underline">
           Sign up
         </a>
       </p>
